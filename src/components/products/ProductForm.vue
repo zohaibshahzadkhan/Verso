@@ -45,9 +45,8 @@
 </template>
 
 <script setup lang="ts">
-import { watch, computed } from 'vue'
+import { watch } from 'vue'
 import { useForm, useField } from 'vee-validate'
-import { useProductValidation } from '@/composables/useProductValidation'
 import { useProducts } from '@/composables/useProducts'
 import type { Product } from '@/types'
 import { toTypedSchema } from '@vee-validate/zod'
@@ -78,15 +77,6 @@ const { handleSubmit, setValues, resetForm } = useForm({
 
 const { value: name, errorMessage: nameError } = useField('name')
 const { value: price, errorMessage: priceError } = useField('price')
-
-const formTitle = computed(() => (props.productToEdit ? 'Edit Product' : 'Create Product'))
-
-const submitButtonText = computed(() => {
-  if (props.productToEdit) {
-    return 'Update Product'
-  }
-  return 'Create Product'
-})
 
 watch(
   () => props.productToEdit,
