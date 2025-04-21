@@ -1,14 +1,13 @@
 <template>
   <div>
     <h1 class="text-2xl font-bold mb-4">Orders Management</h1>
-
-    <OrderList @edit="startEditing" />
     <OrderForm
       :orderToEdit="editingOrder"
       @updated="finishEditing"
       @created="finishEditing"
       @cancelled="finishEditing"
     />
+    <OrderList @edit="startEditing" />
   </div>
 </template>
 
