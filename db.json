@@ -1,12 +1,6 @@
 {
   "orders": [],
-  "products": [
-    {
-      "id": "a657",
-      "name": "Dell Laptop 3537",
-      "price": 1600
-    }
-  ],
+  "products": [],
   "companies": [
     {
       "id": "1",
