@@ -1,45 +1,106 @@
-# ./
+# Case – Frontend Developer (Zohaib)
 
-This template should help get you started developing with Vue 3 in Vite.
+SaaS platform for companies that offers a REST API that allows to
+manage orders and products: A company can create an order with lots of products.
+An order has a customer company and a supplier company.
+This application allows users to create, edit and delete
+orders and products.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## ✨ Features
 
-## Type Support for `.vue` Imports in TS
+- **Create, update, delete products**
+- **Create, update, delete orders**
+- **Form validation** with VeeValidate + Zod
+- **State management** using Pinia + TanStack Query
+- **Routing** with Vue Router
+- **Responsive design** with Tailwind CSS
+- **Linting & formatting** with ESLint + Prettier
+- **Unit tests** with Vitest
+- **Mock backend** using JSON Server
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+---
 
-## Customize configuration
+## 🛠 Tech Stack
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+| Tool               | Purpose                                   |
+| ------------------ | ----------------------------------------- |
+| Vue 3 + TypeScript | Frontend framework                        |
+| VeeValidate + Zod  | Form validation                           |
+| TanStack Query     | Server state (fetching, caching, etc.)    |
+| Pinia              | App state (notifications, selected items) |
+| Vue Router         | Routing and navigation                    |
+| Tailwind CSS       | Utility-first responsive styling          |
+| ESLint + Prettier  | Linting and code formatting               |
+| Vitest             | Unit testing                              |
+| JSON Server        | Mock REST API                             |
 
-## Project Setup
+---
 
-```sh
+## 📦 Installation
+
+1. **Clone the repo**
+
+```bash
+git clone https://github.com/zohaibshahzadkhan/Verso.git
+cd Verso
+```
+
+2. **Install dependencies**
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. **Start JSON Server**
 
-```sh
+Run this in a separate terminal tab:
+
+```bash
+npm run json-server
+```
+
+4. **Start the development Server**
+
+Run this in a separate terminal tab:
+
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 🧪 Testing
 
-```sh
-npm run build
-```
+Run tests:
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
+```bash
 npm run test:unit
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Screenshots
 
-```sh
-npm run lint
-```
+### Product Management
+
+![Product page](./src/assets/Readme/product-page.png)
+
+![Product Creation](./src/assets/Readme/product-creation.png)
+
+![Product validation](./src/assets/Readme/product-validation.png)
+
+![Product update](./src/assets/Readme/update-product.png)
+
+![Product deletion](./src/assets/Readme/delete-product.png)
+
+### Order Management
+
+![Order Page](./src/assets/Readme/orders-page.png)
+
+![Order create](./src/assets/Readme/order-create.png)
+
+![Order update](./src/assets/Readme/orders-update.png)
+
+![Order delete](./src/assets/Readme/order-delete.png)
+
+### Tests
+
+![Tests](./src/assets/Readme/tests.png)
