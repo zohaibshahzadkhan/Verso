@@ -1,6 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col">
     <NavigationBar />
+    <NotificationBar />
     <main class="container mx-auto p-4 flex-grow">
       <slot></slot>
     </main>
@@ -10,4 +11,5 @@
 
 <script setup lang="ts">
 import NavigationBar from './NavigationBar.vue'
+import NotificationBar from '@/components/ui/NotificationBar.vue'
 </script>

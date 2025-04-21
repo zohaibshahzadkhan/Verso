@@ -1,0 +1,40 @@
+{
+  "orders": [],
+  "products": [
+    {
+      "id": "a657",
+      "name": "Dell Laptop 3537",
+      "price": 1600
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple Inc."
+    },
+    {
+      "id": "2",
+      "name": "BestBuy Ltd."
+    },
+    {
+      "id": "3",
+      "name": "Google LLC"
+    },
+    {
+      "id": "4",
+      "name": "Amazon.com Inc."
+    },
+    {
+      "id": "5",
+      "name": "Microsoft Corporation"
+    },
+    {
+      "id": "6",
+      "name": "Tesla Motors"
+    },
+    {
+      "id": "7",
+      "name": "Verso"
+    }
+  ]
+}
