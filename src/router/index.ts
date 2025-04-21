@@ -1,8 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import OrdersPage from '@/pages/OrdersPage.vue'
+import ProductsPage from '@/pages/ProductsPage.vue'
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+const routes = [
+  { path: '/', redirect: '/products' },
+  { path: '/orders', component: OrdersPage },
+  { path: '/products', component: ProductsPage },
+]
+
+export default createRouter({
+  history: createWebHistory(),
+  routes,
 })
-
-export default router
