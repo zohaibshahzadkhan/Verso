@@ -1,11 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import OrdersPage from '@/pages/OrdersPage.vue'
-import ProductsPage from '@/pages/ProductsPage.vue'
 
 const routes = [
   { path: '/', redirect: '/products' },
-  { path: '/orders', component: OrdersPage },
-  { path: '/products', component: ProductsPage },
+  {
+    path: '/orders',
+    component: () => import('@/pages/OrdersPage.vue'),
+  },
+  {
+    path: '/products',
+    component: () => import('@/pages/ProductsPage.vue'),
+  },
 ]
 
 export default createRouter({
