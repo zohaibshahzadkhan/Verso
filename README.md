@@ -1,4 +1,3 @@
-# Case – Frontend Developer (Zohaib)
 
 SaaS platform for companies that offers a REST API that allows to
 manage orders and products: A company can create an order with lots of products.
